@@ -1,12 +1,355 @@
-body, p{
+body{
   margin: 0px;
   padding: 0px;
+  background-color: #FFF7F7;
+  font-family: Helvetica;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000000;
+  letter-spacing: 0
+}
+
+body {
+  line-height: 2rem;
 }
 
 /* Slider-section */
 .slider-section {
-  width: 100%;
-  height: 960px;
+  position: relative;
+  height: 500px;
   background-color: aqua;
-  padding: 190px 230px;
+  padding: 40px;
+  z-index: 100;
+}
+
+.left-arrow, .right-arrow {
+  cursor: pointer;
+  text-align: center;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #FD984D;
+  border-radius: 50%;
+  top:40%;
+}
+
+.right-arrow {
+  right: 40px;
+}
+
+
+.slider-section-inner {
+  display: flex;
+  flex-direction: row;
+  display: none;
+}
+
+.slider-section-inner-acitve {
+  display: flex;
+  flex-direction: row;
+}
+
+.slider-section-inner-left {
+  width: 50%;
+}
+
+.slider-section-inner-right {
+  width: 50%;
+}
+
+.slider-section-inner-right img {
+  width: 100%;
+}
+
+/* Business Section */
+.business-section {
+  height: 400px;
+  background-image: linear-gradient(to right, #FFF, #FDE6FD);
+  display: flex;
+  padding:60px 200px;
+}
+
+.business-section .round-shape-image {
+  position: absolute;
+  top: 40%;
+  left: -20%;
+  transform: scaleX(-1) rotate(115deg);
+  width: 40%;
+}
+.business-section-left {
+  width: 50%;
+  padding: 20px;
+  z-index: 10;
+}
+
+.business-section-right {
+  padding: 20px;
+  width: 50%;
+}
+
+.business-section-right img {
+  width: 100%;
+  height: auto;
+}
+
+/* Interface Section */
+
+.interface-section {
+  padding:60px 220px;
+}
+
+.interface-section-inner {
+  background: #F6DEDE;
+  display: flex;
+}
+
+.interface-section-inner-left {
+  width: 50%;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.attached-image-section {
+  background: #fff;
+  height: 400px;
+}
+
+.attached-image-section img {
+  width: 100%;
+  height: 370px;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.interface-section-inner-right {
+  width: 50%;
+}
+
+/* Web Design Section */
+.web-design-section {
+  padding:60px 220px;
+}
+
+.web-design-section-inner {
+  position: relative;
+  background-image: url('../img/image3.JPG');
+  background-size: 100% 100%;
+  height: 400px;
+}
+.web-design-text {
+  right: 0px;
+  position: absolute;
+  background-color: #fff;
+  width: 35%;
+  padding: 30px;
+  bottom: 0px;
+}
+
+/* Information Architecture Section */
+.information-architecture-section {
+  padding:60px 220px;
+}
+
+.information-architecture-section-inner {
+  position: relative;
+  background-image: url('../img/image4.JPG');
+  background-size: 100% 100%;
+  height: 400px;
+}
+.information-architecture-text {
+  right: 0px;
+  position: absolute;
+  background-color: #fff;
+  width: 35%;
+  padding: 30px;
+  bottom: 0px;
+}
+
+/* Business Section */
+.identify-business-base-section {
+  position: relative;
+}
+
+.identify-business-base-section .combined-shape{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  /* z-index: -1000; */
+  top: -40%;
+}
+.identify-business-section {
+  /* width: 100%; */
+  /* height: 400px; */
+  /* background-image: url('../img/Combined Shape.png'); */
+  /* background-size: cover; */
+  display: flex;
+  padding:60px 200px;
+}
+
+.identify-business-section-left {
+  width: 50%;
+  padding: 20px;
+  z-index: 10;
+}
+
+.identify-business-section-right {
+  position: relative;
+  padding: 20px;
+  width: 50%;
+}
+
+.identify-business-section-right img {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  height: auto;
+}
+
+/* Question section */
+.question-section {
+  margin-top: 180px;
+  padding:60px 220px;
+  display: flex;
+}
+
+.question-section-left {
+  width: 50%;
+}
+
+.question-section-left img {
+  width: 100%;
+}
+
+.question-section-right {
+  padding-left: 40px;
+  width: 50%;
+}
+
+/* Question section */
+.subscribe-section {
+  padding:60px 220px;
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe-section-inner {
+  width: 50%;
+  text-align: center;
+}
+
+.input-group {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  width: 100%;
+}
+
+.form-control {
+  margin-bottom: 0;
+  display: block;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #000;
+  border-radius: .25rem 0rem 0rem 0.25rem;
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 1%;
+}
+
+.input-group-append {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -5px;
+}
+
+.input-group-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: .375rem 2rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #000;
+  border: 2px solid #000;
+  border-radius: .25rem;
+}
+
+/* Youtube section */
+.video-section {
+  padding:60px 220px;
+  display: flex;
+  justify-content: center;
+}
+
+.video-section-inner {
+  width: 50%;
+  text-align: center;
+}
+
+.video-section-inner img {
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Modal CSS */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
