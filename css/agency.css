@@ -21,10 +21,13 @@ body {
 /* Slider-section */
 .slider-section {
   position: relative;
-  height: 500px;
-  background-color: aqua;
+  background-color: #FFFFFF;
   padding: 40px;
   z-index: 100;
+}
+
+.left-arrow {
+  left: 5%;
 }
 
 .left-arrow, .right-arrow {
@@ -38,15 +41,44 @@ body {
   top:40%;
 }
 
+.left-arrow h6, .right-arrow  h6 {
+  margin-top: 10px;
+  font-size: 25px;
+  color: #fff;
+}
+
 .right-arrow {
-  right: 40px;
+  right: 5%;
 }
 
 
 .slider-section-inner {
+  padding: 30px 80px;
   display: flex;
   flex-direction: row;
   display: none;
+}
+
+.slider-section-inner h1 {
+  line-height: 4rem;
+  font-size: 65px;
+  font-weight: 700;
+}
+
+.slider-section-inner p {
+  text-align: justify;
+}
+
+.slider-section-inner button {
+  background-color: #000;
+  color: #fff;
+  padding: 15px 30px;
+  margin-right: 10px;
+  border: 0px;
+}
+
+.slider-section-inner span {
+  text-decoration: underline;
 }
 
 .slider-section-inner-acitve {
@@ -55,10 +87,12 @@ body {
 }
 
 .slider-section-inner-left {
+  padding: 40px;
   width: 50%;
 }
 
 .slider-section-inner-right {
+  padding: 40px;
   width: 50%;
 }
 
@@ -68,10 +102,9 @@ body {
 
 /* Business Section */
 .business-section {
-  height: 400px;
   background-image: linear-gradient(to right, #FFF, #FDE6FD);
   display: flex;
-  padding:60px 200px;
+  padding:60px 100px;
 }
 
 .business-section .round-shape-image {
@@ -87,6 +120,11 @@ body {
   z-index: 10;
 }
 
+.business-section-left h5 {
+  margin-top: 15px;
+  text-decoration: underline;
+}
+
 .business-section-right {
   padding: 20px;
   width: 50%;
@@ -98,7 +136,6 @@ body {
 }
 
 /* Interface Section */
-
 .interface-section {
   padding:60px 220px;
 }
@@ -110,24 +147,39 @@ body {
 
 .interface-section-inner-left {
   width: 50%;
-  padding-top: 20px;
-  padding-left: 20px;
+  padding-top: 5%;
+  padding-left: 5%;
+  position: relative;
 }
 
 .attached-image-section {
   background: #fff;
-  height: 400px;
 }
 
 .attached-image-section img {
   width: 100%;
-  height: 370px;
-  padding-top: 30px;
-  padding-left: 30px;
+  padding-top: 5%;
+  padding-left: 10%;
+  height: 80%;
 }
 
 .interface-section-inner-right {
   width: 50%;
+  position: relative;
+}
+
+.interface-section-inner-right > .image-section {
+  padding-top: 20px; 
+  padding-left: 20%;
+}
+
+.interface-text-section-div {
+  right: 0px;
+  position: absolute;
+  background-color: #fff;
+  width: 60%;
+  padding: 30px;
+  bottom: 0px;
 }
 
 /* Web Design Section */
@@ -361,94 +413,295 @@ body {
 /* Responsive CSS for Tablet */
 @media only screen and (max-width: 1028px) {
 
-    /* Web Design Section */
-    .web-design-section {
-      padding:30px;
+    /* Slider-section */
+    .slider-section {
+      padding: 20px;
     }
 
-    .web-design-section-inner {
-      height: 320px;
+    .slider-section-inner {
+      padding: 10px 30px;
+      flex-direction: column;
     }
-    .web-design-text {
-      width: 70%;
+
+    .slider-section-inner h1 {
+      line-height: 3rem;
+      font-size: 50px;
+    }
+
+    .slider-section-inner-acitve {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .slider-section-inner-left {
       padding: 10px;
+      width: 100%;
     }
-
-    /* Information Architecture Section */
-    .information-architecture-section {
-      padding:30px;
-    }
-
-    .information-architecture-section-inner {
-      height: 320px;
-    }
-    .information-architecture-text {
-      width: 70%;
+    
+    .slider-section-inner-right {
       padding: 10px;
+      width: 100%;
     }
 
     /* Business Section */
-    .identify-business-base-section .combined-shape{
-      display: none;
-    }
-    .identify-business-section {
-      flex-direction: column;
-      padding:30px;
-    }
-    
-    .identify-business-section-left {
-      width: 100%;
-    }
-    
-    .identify-business-section-right {
-      width: 100%;
-    }
-
-  /* Question Section */
-  .question-section {
-    margin-top: 180px;
-    padding:20px;
+  .business-section {
+    display: flex;
     flex-direction: column;
-  }
-  
-  .question-section-left {
-    width: 100%;
-  }
-  
-  .question-section-left img {
-    width: 100%;
-  }
-  
-  .question-section-right {
-    width: 100%;
+    padding: 30px;
   }
 
-  /* Subscribe Section */
-  .subscribe-section {
+  .business-section .round-shape-image {
+    display: none;
+  }
+
+  .business-section-left {
+    width: 100%;
     padding: 20px;
   }
+
+  .business-section-right {
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* Interface Section */
+.interface-section {
+  padding:10px 30px;
+}
+
+.interface-section-inner {
+  background: #F6DEDE;
+  display: flex;
+  flex-direction: column;
+}
+
+.interface-section-inner-left {
+  padding-top: 0%;
+  padding-left: 0%;
+  width: 100%;
+}
+
+.attached-image-section {
+  background: #fff;
+}
+
+.attached-image-section img {
+  width: 100%;
+  padding-top: 0%;
+  padding-left: 0%;
+}
+
+.interface-section-inner-right {
+  width: 100%;
+  position: relative;
+}
+
+.interface-section-inner-right > .image-section {
+  display: none;
+}
+
+.interface-text-section-div {
+  background-color: #fff;
+  width: 90%;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+  /* Web Design Section */
+  .web-design-section {
+    padding:30px;
+  }
+
+  .web-design-section-inner {
+    height: 320px;
+  }
+  .web-design-text {
+    width: 70%;
+    padding: 10px;
+  }
+
+  /* Information Architecture Section */
+  .information-architecture-section {
+    padding:30px;
+  }
+
+  .information-architecture-section-inner {
+    height: 320px;
+  }
+  .information-architecture-text {
+    width: 70%;
+    padding: 10px;
+  }
+
+  /* Business Section */
+  .identify-business-base-section .combined-shape{
+    display: none;
+  }
+  .identify-business-section {
+    flex-direction: column;
+    padding:30px;
+  }
   
-  .subscribe-section-inner {
+  .identify-business-section-left {
+    width: 100%;
+  }
+  
+  .identify-business-section-right {
     width: 100%;
   }
 
-  /* Video Section */
-  .video-section {
-    padding:40px;
-  }
-  .video-section-inner {
-    width: 60%;
-  }
-  
-  .video-section-inner img {
-    width: 80%;
-  }
+/* Question Section */
+.question-section {
+  margin-top: 180px;
+  padding:20px;
+  flex-direction: column;
+}
+
+.question-section-left {
+  width: 100%;
+}
+
+.question-section-left img {
+  width: 100%;
+}
+
+.question-section-right {
+  width: 100%;
+}
+
+/* Subscribe Section */
+.subscribe-section {
+  padding: 20px;
+}
+
+.subscribe-section-inner {
+  width: 100%;
+}
+
+/* Video Section */
+.video-section {
+  padding:40px;
+}
+.video-section-inner {
+  width: 60%;
+}
+
+.video-section-inner img {
+  width: 80%;
+}
 }
 
 
 
 /* Responsive CSS for Mobile */
 @media only screen and (max-width: 768px) {
+
+  /* Slider-section */
+.slider-section {
+  padding: 10px;
+}
+
+.slider-section-inner {
+  padding: 10px 30px;
+  flex-direction: column;
+}
+
+.slider-section-inner h1 {
+  line-height: 2.5rem;
+  font-size: 40px;
+}
+
+.slider-section-inner p {
+  text-align: justify;
+}
+
+.slider-section-inner button {
+  padding: 10px 15px;
+}
+
+.slider-section-inner span {
+  text-decoration: underline;
+}
+
+.slider-section-inner-acitve {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-section-inner-left {
+  padding: 10px;
+  width: 100%;
+}
+
+.slider-section-inner-right {
+  padding: 10px;
+  width: 100%;
+}
+
+/* Business Section */
+.business-section {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.business-section .round-shape-image {
+  display: none;
+}
+
+.business-section-left {
+  width: 100%;
+  padding: 10px;
+}
+
+.business-section-right {
+  width: 100%;
+  padding: 10px;
+}
+
+/* Interface Section */
+.interface-section {
+  padding:10px 30px;
+}
+
+.interface-section-inner {
+  background: #F6DEDE;
+  display: flex;
+  flex-direction: column;
+}
+
+.interface-section-inner-left {
+  padding-top: 0%;
+  padding-left: 0%;
+  width: 100%;
+}
+
+.attached-image-section {
+  background: #fff;
+}
+
+.attached-image-section img {
+  width: 100%;
+  padding-top: 0%;
+  padding-left: 0%;
+}
+
+.interface-section-inner-right {
+  width: 100%;
+  position: relative;
+}
+
+.interface-section-inner-right > .image-section {
+  display: none;
+}
+
+.interface-text-section-div {
+  background-color: #fff;
+  width: 90%;
+  padding: 30px;
+  margin: 0 auto;
+}
+
 
   /* Web Design Section */
   .web-design-section {
