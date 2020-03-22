@@ -10,6 +10,10 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0
 }
 
+h5,h5,p {
+  line-height: 1.5rem;
+}
+
 body {
   line-height: 2rem;
 }
@@ -175,14 +179,9 @@ body {
   position: absolute;
   width: 100%;
   height: auto;
-  /* z-index: -1000; */
   top: -40%;
 }
 .identify-business-section {
-  /* width: 100%; */
-  /* height: 400px; */
-  /* background-image: url('../img/Combined Shape.png'); */
-  /* background-size: cover; */
   display: flex;
   padding:60px 200px;
 }
@@ -211,6 +210,7 @@ body {
   margin-top: 180px;
   padding:60px 220px;
   display: flex;
+  flex-direction: row;
 }
 
 .question-section-left {
@@ -226,7 +226,7 @@ body {
   width: 50%;
 }
 
-/* Question section */
+/* Subscribe section */
 .subscribe-section {
   padding:60px 220px;
   display: flex;
@@ -317,17 +317,17 @@ body {
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none; 
+  position: fixed;
+  z-index: 1; 
+  padding-top: 100px; 
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
 }
 
 /* Modal Content */
@@ -352,4 +352,185 @@ body {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* Responsive Design */
+/* Media Query CSS */
+
+
+/* Responsive CSS for Tablet */
+@media only screen and (max-width: 1028px) {
+
+    /* Web Design Section */
+    .web-design-section {
+      padding:30px;
+    }
+
+    .web-design-section-inner {
+      height: 320px;
+    }
+    .web-design-text {
+      width: 70%;
+      padding: 10px;
+    }
+
+    /* Information Architecture Section */
+    .information-architecture-section {
+      padding:30px;
+    }
+
+    .information-architecture-section-inner {
+      height: 320px;
+    }
+    .information-architecture-text {
+      width: 70%;
+      padding: 10px;
+    }
+
+    /* Business Section */
+    .identify-business-base-section .combined-shape{
+      display: none;
+    }
+    .identify-business-section {
+      flex-direction: column;
+      padding:30px;
+    }
+    
+    .identify-business-section-left {
+      width: 100%;
+    }
+    
+    .identify-business-section-right {
+      width: 100%;
+    }
+
+  /* Question Section */
+  .question-section {
+    margin-top: 180px;
+    padding:20px;
+    flex-direction: column;
+  }
+  
+  .question-section-left {
+    width: 100%;
+  }
+  
+  .question-section-left img {
+    width: 100%;
+  }
+  
+  .question-section-right {
+    width: 100%;
+  }
+
+  /* Subscribe Section */
+  .subscribe-section {
+    padding: 20px;
+  }
+  
+  .subscribe-section-inner {
+    width: 100%;
+  }
+
+  /* Video Section */
+  .video-section {
+    padding:40px;
+  }
+  .video-section-inner {
+    width: 60%;
+  }
+  
+  .video-section-inner img {
+    width: 80%;
+  }
+}
+
+
+
+/* Responsive CSS for Mobile */
+@media only screen and (max-width: 768px) {
+
+  /* Web Design Section */
+  .web-design-section {
+    padding:30px;
+  }
+
+  .web-design-section-inner {
+    height: 250px;
+  }
+  .web-design-text {
+    width: 80%;
+    padding: 10px;
+  }
+
+  /* Information Architecture Section */
+  .information-architecture-section {
+    padding:30px;
+  }
+
+  .information-architecture-section-inner {
+    height: 250px;
+  }
+  .information-architecture-text {
+    width: 80%;
+    padding: 10px;
+  }
+
+  /* Business Section */
+  .identify-business-base-section .combined-shape{
+    display: none;
+  }
+  .identify-business-section {
+    flex-direction: column;
+    padding:30px;
+  }
+  
+  .identify-business-section-left {
+    width: 100%;
+  }
+  
+  .identify-business-section-right {
+    width: 100%;
+  }
+
+  /* Question Section */
+  .question-section {
+    margin-top: 180px;
+    padding:20px;
+    flex-direction: column;
+  }
+  
+  .question-section-left {
+    width: 100%;
+  }
+  
+  .question-section-left img {
+    width: 100%;
+  }
+  
+  .question-section-right {
+    width: 100%;
+  }
+  
+
+  /* Subscribe Section */
+  .subscribe-section {
+    padding: 20px;
+  }
+  
+  .subscribe-section-inner {
+    width: 100%;
+  }
+
+  /* Video Section */
+  .video-section {
+    padding:20px;
+  }
+  .video-section-inner {
+    width: 80%;
+  }
+  
+  .video-section-inner img {
+    width: 60%;
+  }
 }
